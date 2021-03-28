@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New person</title>
+    <h1>Новый студент</h1>
+    <hr/>
+</head>
+<body>
+<div>
+<form action="/home/new" method="post">
+    <input type="text" name="name" placeholder="Введите имя студента" ><br>
+    <input type="number" name="age" placeholder="Введите возраст студента" class="form-control"><br>
+    <input type="text" name="email" placeholder="Введите e-mail студента" class="form-control"><br>
+    <button type="submit" class="btn btn-success"> Добавить студента </button>
+</form>
+</div>
+</body>
+</html>

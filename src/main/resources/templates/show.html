@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+    <h1>Студент</h1>
+</head>
+<body>
+<div th:each="element : ${personCurrent}">
+    <p th:text="${'Имя ' + element.getName()}"/>
+    <p th:text="${'Возраст ' +element.getAge()}"/>
+    <p th:text="${'Email ' +element.getEmail()}"/>
+
+</div>
+
+
+</form>
+</body>
+</html>
